@@ -1,98 +1,79 @@
-# Escape Hospital
-Unity 3D 맵 구조변경 시스템을 도입한 공포게임
-<img width="1009" alt="eh_mainImage" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/0ec342f9-b0d0-4de8-992e-9e0635bf41d1">
-개발기간: 2023.03 ~ 2023.08
+![게임 배너.png](/ReadMeSource/banner.png)
 
-## 팀 소개
-조윤장 - 전남대학교 소프트웨어공학과
-<br>
-정준희 - 전남대학교 소프트웨어공학과
-<br>
-이준형 - 전남대학교 소프트웨어공학과
+- 태그: 1인칭, 생존 호러
+- 사용 기술: Github, Unity 3D, VisualStudio
+- 팀 구성: 프로그래머 3명(맵&인벤토리 / NPC / 플레이어)
+- 플랫폼: PC
+- 작업 기간: 2023년 3월 1일 → 2023년 7월 30일
 <br>
 
-## 프로젝트 소개
-본 프로젝트는 선형적인 방탈출 게임 장르에 비선형적 진행 요소를 더하여 플레이의 자유도를 높인 공포 게임 제작을 목표로 한다.
-<br><br>
-따라서 게임 진행 중에 플레이어가 임의로 맵의 구조를 변경할 수 있는 기능을 도입하여 직접적인 플레이의 자유도를 높였으며
-<br>
-과도한 자유도로 인한 공포감 저하를 방지하기 위해 적대적 NPC의 무작위 이동 기능을 구현하여 예측 불가능한 공포감을 유도하여
-<br>
-비선형적 진행 방식의 자유도와 함께 공포게임의 주 목적인 공포감 제공을 동시에 달성할 수 있도록 프로젝트를 진행한다. 
+
+## ❗개요
+- **Unity 3D를 사용한 PC 기반의 1인칭 생존 호러 게임**
+- 플레이어 임의의 맵 구조 변경 시스템을 도입하여 일반적인 방탈출 생존 호러 게임보다 플레이의 자유도를 높인 게임을 목표로 개발
+- 전남대학교 2023 소프트웨어중심대학사업단 성과 발표회 동상 수상
 <br>
 
-## 시작 가이드
-**Development Requirements**
-<br>
-Unity Editor 2021.3.20f1 LTS ~
-<br>
-<br>
-**System Requirements**
-<br>
-|           |          Minimum          |        Recommended        |
-|-----------|:-------------------------:|:-------------------------:|
-|     OS    |  Windwos 7<br>Mac OS Big Sur | Windows 10<br>Mac OS Ventura |
-| Processor | Intel Core Duo 2<br>Apple M1 |   Intel i3-8100<br>Apple M1  |
-|   Memory  |            8GB            |            8GB            |
-|  Graphics |     Integrated Graphic    |     Integrated Graphic    |
-|  Storage  |            1GB            |            2GB            |
-<br>
 
-## Stacks
-**Environment**
-<br>
-<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
-<br>
-**Development**
-<br>
-<img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSharp-239128?style=flat-square&logo=Csharp&logoColor=white"/>
-<br>
-**Communication**
-<br>
-<img src="https://img.shields.io/badge/Notion-0000000?style=flat-square&logo=notion&logoColor=white"/>
-<br>
+## 📜 주요 기능
 
-## 게임 화면 구성
-| 메인 메뉴  |  플레이어 시점   |
-| :-------------------------------------------: | :------------: |
-|  <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/d7f3d965-e389-4b63-9743-ebb0ea25b2e0"/> |  <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/e553fb27-ce64-41a1-a60d-5c8469c550a6"/>|  
-| 맵   |  NPC   |  
-| <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/54efa987-2588-4f44-8e48-e739366bfa39"/>   |  <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/3d744bd9-2727-463d-a26d-41db1f7d0c0c"/>     |
-| 맵 구조변경 기능   |  플레이어 시각효과   |  
-| <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/8aca8abe-a140-4b42-9f5e-a3794a3c3d01"/>   |  <img width="329" src="https://github.com/DimBlessing/DimBlessing/assets/47944912/a7e15adc-cb0f-45cc-9adf-10aa573b853b"/>     |
+### 플레이어 임의의 맵 구조 변경 시스템
 
-
-
-## 주요 기능
-### 플레이어의 아이템 사용에 의한 맵 구조변경 시스템(벽 뜯기)
-- 방탈출 공포게임에 비선형적 진행방식을 통해 플레이의 자유도 향상을 목표로 기능 도입
-- 게임 맵(건물)의 벽 오브젝트를 이동시킴으로써 NPC 회피에 활용하거나 새로운 게임 진행 경로 생성
-- 인게임에서 습득할 수 있는 망치 아이템을 통해 기능 사용 가능(횟수 제한)
+- 맵 내에 위치한 망치 오브젝트 보유 여부를 기준으로 기능 활성화
+- 기능 활성화 상태에서 이동이 가능한 벽을 바라보고 키 입력 시 벽을 들어올리며, 키를 놓았을 때는 해당 위치에 벽이 고정
+- 새로운 길을 개척하거나 적대적 NPC를 방해하는 용도로 활용 가능
 
 ### 적대적 NPC
-- 공포게임에서 플레이어에게 공포감을 유발할 수 있는 외형의 NPC 모델 추가
-- 맵 내를 자동적으로 순찰, 플레이어를 인식할 시 추적 및 공격하는 기능 구현(Raycast 기반 인식)
-- 맵 구조변경 시스템에 의한 맵 수정에 대응한 Runtime Navmesh 
+
+- 맵 내부를 순찰하며 플레이어를 발견 시 추적 및 공격
 
 ### 퍼즐 및 단서
-- 게임 진행 및 클리어를 위한 컨텐츠로써 퍼즐을 맵 내에 배치
-- 습득한 단서를 통한 퍼즐 해결 및 인게임 스토리 진행
-- 정신력 회복 아이템 등 습득하여 인벤토리에서 사용할 수 있는 아이템을 배치
-  
-### 플레이어 조작 및 시각/사운드 효과
-- PC환경에서 플레이어 캐릭터 조작 기능 구현, 조작에 따른 플레이어 캐릭터 애니메이션 설정
-- 적대적 NPC에 대한 공포감 극대화를 위해 근접, 조우, 피격 등 상황에 따른 시각적 효과 구현
-- 인게임 요소 상호작용에 따른 사운드 효과 재생
+
+- 맵 내에 위치한 단서들로 열쇠의 위치나 자물쇠의 비밀번호를 습득 가능
+- 습득한 요소들을 통한 퍼즐 해결 및 인게임 스토리 진행
+<br>
 
 
+## 🖥️ 본인 개발 내용
+
+### 플레이어 임의의 맵 구조 변경 시스템
+
+- 맵을 구성하는 벽을 들어올리는 과정과 내리는 과정으로 나누어 구현
+- 벽을 들어올릴 시 벽의 부모 오브젝트를 건물에서 플레이어 카메라로 전환. 이를 통해 플레이어 시야 이동과 벽의 이동이 함께 진행.
+- 벽을 내려놓을 때는 들어올리는 과정의 반대로 실행.
+
+### 사운드 매니저
+
+- 플레이어 발소리 / 각 NPC 별 발소리 및 목소리 / 상호작용 효과음을 통합 관리하기 위하여 싱글톤 패턴을 사용해 구현
+- 단독 재생이 필요한 효과음과 랜덤 재생이 필요한 발소리를 개별적으로 관리
+
+### 플레이어 행동 및 정보 제어
+
+- 카메라 중앙에서 광선을 발사, 해당 결과를 바탕으로 충돌 유무 / 충돌 상태 전환 유무 / 충돌 오브젝트와 그 부모 오브젝트 / 충돌 오브젝트의 전환 유무 판별
+- 행동 제어 클래스에서 Raycast 결과 변수들을 바탕으로 아이템 줍기 / 맵 구조 변경 기능 동작
+- 정보 제어 클래스에서 Raycast 결과 중 전환 변수들을 바탕으로 상태가 전환될 때 외곽선 on&off / 안내 텍스트 on&off / 안내 텍스트 정보 업데이트 기능 동작
+
+### 애니메이션
+
+- 플레이어 움직임 및 적대적 NPC들의 배회 / 공격 애니메이션 적용
+- 이동 속도와 애니메이션 재생 속도를 연결하여 자연스러운 움직임 구현
+<br>
 
 
+## 🕹️ 인게임 영상
+
+[![티저 및 설명 영상](/ReadMeSource/thumbnail.png)](https://youtu.be/zAkzgQ9c_IA?si=z_7aVDKqbU_w4EFW)
+<br>
 
 
+## 💡 성장 경험
+### 의사소통은 자세하고 구체적으로
 
+- 맵 구조 변경 시스템을 제작하는 과정에서 맵을 제작한 팀원과 의사소통 오류가 발생. 긴급히 수정하였으나 그 과정에서 일정이 지연됨
+- 기능 구현에 대하여 의사소통 시 목표뿐만 아니라 진행 방식까지 자세한 논의가 필요함을 깨닫고 이후 의사소통 과정에서 이를 반영함
 
+### 객체지향 원칙 준수
 
-
-
+- 객체지향 원칙 준수보다 빠른 기능 구현에 의미를 두고 개발을 진행
+- 하나의 클래스에 여러 기능이 얽혀있는 상황에서 위의 돌발 상황이 발생. 해당 기능과 관련된 코드를 분리하는 데 어려움을 겪음
+- 역할과 책임을 생각하며 리팩토링을 진행하였으며 Raycast, 행동 제어, 정보 제어로 각 기능을 분리함.
